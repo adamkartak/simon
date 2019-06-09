@@ -17,7 +17,7 @@ function nextSequence() {
   return randomNumber;
 }
 
-$(".btn").click(function(e) {
+$(".btn").on("click touch", function(e) {
   var userChosenColor = e.target.id;
   playerPattern.push(userChosenColor);
   var pressSound = new Audio("sounds\\" + userChosenColor + ".mp3");
