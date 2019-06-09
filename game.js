@@ -83,6 +83,13 @@ $(document).keypress(function() {
   }
 });
 
+$("h1").click(function() {
+    if (turn < 1) {
+    nextSequence();
+    turn++;
+  }
+});
+
 
 
 
