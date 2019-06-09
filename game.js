@@ -83,28 +83,9 @@ $(document).keypress(function() {
   }
 });
 
-$("h1").click(function() {
+$("h1").on("click touch", function() {
     if (turn < 1) {
     nextSequence();
     turn++;
   }
 });
-
-
-
-
-//   console.log(gamePattern);
-//   for (i=0; i<gamePattern.length; i++) {
-//     $(".btn").click(function(event) {
-//       playerPattern.push(event.target.id);
-//     });
-//     if (playerPattern[i] === gamePattern[i]) {
-//       continue;
-//     } else {
-//       alert('you lose');
-//     }
-//   }
-//
-//
-//
-// });
